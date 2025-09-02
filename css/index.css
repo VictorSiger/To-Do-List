@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Area da estilizacao dos elementos no cartao central*/
+
+#cartao-container {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    border-radius: 20px;
+    height: 45%;
+    width: 35%;
+}
+
+#inputArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    height: 13%;
+    margin-bottom: 2%;
+}
+
+#inpTarefa {
+    height: 90%;
+    border-radius: 20px;
+}
+
+#botaoAdd {
+
+}
+
+#tarefasContainer { 
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 86%;
+    border: 2px solid black;
+}
+
+/*Area da estilizacao das tarefas(botoes/texto)*/
+
+.tarefaContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    height: 13%;
+    width: 1;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+.texto-tarefa {
+    display: flex;
+    padding-left: 2%;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 70%;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    border: 2px solid red;
+    height: 100%;
+    width: 30%;
+}
+
+.botao-editar-tarefa {
+    height: 100%;
+    width: 49%;
+}
+
+.botao-excluir-tarefa {
+    height: 100%;
+    width: 49%;
+}
+
