@@ -4,6 +4,7 @@
 }
 
 main {
+    background-color: #222222;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,10 +17,11 @@ main {
     padding: 1%;
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
+    border: solid 1px white;
     border-radius: 20px;
     height: 45%;
     width: 35%;
+    background-color: #FF0000;
 }
 
 #inputArea {
@@ -34,11 +36,40 @@ main {
 
 #inpTarefa {
     height: 90%;
+    border: 1px solid wh;
     border-radius: 20px;
+    background-color: #222222;
+    
+}
+
+#espacoErroTarefa {
+    border: solid 1px green;
+    color: green;
+    height: 30%;
+    width: 40%;
+}
+
+#containerBotoesInp {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    gap: 4%;
+    align-items: center;
+    height: 100%;
+    width: 20%;
 }
 
 #botaoAdd {
+    border: 1px solid black;
+    height: 98%;
+    width: 48%;
+}
 
+#botaoConfirmarEdicao {
+    display: none;
+    border: 2px solid black;
+    height: 98%;
+    width: 48%;
 }
 
 #tarefasContainer { 
