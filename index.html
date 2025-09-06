@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="./script/localStorage.js" defer></script>
@@ -9,21 +10,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List</title>
 </head>
+
 <body>
     <main>
         <section id="cartao-container">
             <div id="inputArea">
-                <input type="text" id="inpTarefa" placeholder="Digite uma Tarefa...">
+                <input type="text" id="inpTarefa" placeholder="Digite uma Tarefa..." autocomplete="off">
                 <p id="espacoErroTarefa"></p>
                 <div id="containerBotoesInp">
-                   <button id="botaoConfirmarEdicao" class="fa-solid fa-check"></button>
-                   <button id="botaoAdd" class="fa-solid fa-plus"></button>  
-
+                    <button id="botaoConfirmarEdicao" class="fa-solid fa-check"></button>
+                    <button id="botaoAdd" class="fa-solid fa-plus"></button>
                 </div>
-
             </div>
             <div id="tarefasContainer"></div>
         </section>
     </main>
 </body>
+
 </html>

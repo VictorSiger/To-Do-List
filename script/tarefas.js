@@ -41,7 +41,6 @@ function excluirEeditarTarefas(event){
     if(event.target.classList.contains("botao-excluir-tarefa")){
         const tarefaDoBotaoClicado = event.target.closest(".tarefaContainer")
         const tarefaId = Number(tarefaDoBotaoClicado.id)
-        console.log(tarefaId)
         listaTarefas.splice(tarefaId, 1)
         guardarNoLocalStorage("tarefas", listaTarefas)
         exibirTarefas()
@@ -51,18 +50,14 @@ function excluirEeditarTarefas(event){
         listaTarefas = resgatarItemDoLocalStorage("tarefas")
         inputTarefa.placeholder = "Edite aqui a tarefa..." 
         const tarefaClicada = event.target.closest(".tarefaContainer")
-        console.log(tarefaClicada)
         const tarefaID = Number(tarefaClicada.id)
         const tarefa = listaTarefas[tarefaID]
-        console.log(tarefa)
       
 
         botaoConfirmarEdicao.addEventListener("click", (event) =>{
             tarefa.descricao = inputTarefa.value
             inputTarefa.value = ""
             listaTarefas[tarefaID] = tarefa
-            console.log(tarefaID)
-            console.log(tarefa)
             guardarNoLocalStorage("tarefas", listaTarefas)
             exibirTarefas()
             botaoConfirmarEdicao.style.display = "none"
